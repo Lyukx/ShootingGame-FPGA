@@ -1,0 +1,34 @@
+NET "vgaRed[0]"   LOC = U7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L43P, Sch name = RED0
+NET "vgaRed[1]"   LOC = V7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L43N, Sch name = RED1
+NET "vgaRed[2]"   LOC = N7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L44P, Sch name = RED2
+NET "vgaGreen[0]" LOC = P8 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L44N, Sch name = GRN0
+NET "vgaGreen[1]" LOC = T6 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L45P, Sch name = GRN1
+NET "vgaGreen[2]" LOC = V6 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L45N, Sch name = GRN2
+NET "vgaBlue[0]"  LOC = R7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L46P, Sch name = BLU1
+NET "vgaBlue[1]"  LOC = T7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L46N, Sch name = BLU2
+
+NET "hsync" LOC = N6 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L47P, Sch name = HSYNC
+NET "vsync" LOC = P7 | IOSTANDARD = LVCMOS33; # Bank = 2, pin name = IO_L47N, Sch name = VSYNC
+
+NET "clk" LOC=V10 | IOSTANDARD=LVCMOS33;
+NET "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+#NET "display[0]" LOC="T17";
+#NET "display[1]" LOC="T18";
+#NET "display[2]" LOC="U17";
+#NET "display[3]" LOC="U18";
+#NET "display[4]" LOC="M14";
+#NET "display[5]" LOC="N14";
+#NET "display[6]" LOC="L14";
+#NET "display[7]" LOC="M13";
+
+#NET "digit_anode[0]" LOC="N16";
+#NET "digit_anode[1]" LOC="N15";
+#NET "digit_anode[2]" LOC="P18";
+#NET "digit_anode[3]" LOC="P17";
+
+NET "switch" LOC="T5";
+
+NET "PS2C" LOC = L12 | IOSTANDARD = LVCMOS33 | PULLUP;
+NET "PS2D" LOC = J13 | IOSTANDARD = LVCMOS33 | PULLUP; 
